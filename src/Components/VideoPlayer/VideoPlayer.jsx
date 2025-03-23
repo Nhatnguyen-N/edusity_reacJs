@@ -11,9 +11,7 @@ const player= useRef(null);
   }
 
   return (
-    <div className={`video-player${playState?'':'hide'}`} ref={player}
-    onClick={closePlayer}
-    >
+    <div className={`video-player${playState?'':'hide'}`} ref={player}onClick={closePlayer}>
       <video src={video} autoPlay muted controls></video>
     </div>
   )

@@ -30,7 +30,8 @@ const App = () => {
     <Contact/>
     <Footer/>
       </div>
-      <VideoPlayer playState={playState} setPlayState={setPlayState}/>
+      {playState?<VideoPlayer playState={playState} setPlayState={setPlayState}/>:''}
+      {/* <VideoPlayer playState={playState} setPlayState={setPlayState}/> */}
     </div>
   )
 }
